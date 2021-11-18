@@ -1,0 +1,1 @@
+web: gunicorn AmazonShopSite.wsgi --log-file -

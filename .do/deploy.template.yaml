@@ -1,0 +1,17 @@
+spec:
+  name: AmazonShop
+  services:
+  - name: web
+    github:
+      repo: bryan-beck/AmazonShop.git
+      branch: main
+      deploy_on_push: true
+    envs:
+    - key: AMAZON_ACCESS_KEY
+      value: "your access key"
+    - key: AMAZON_SECRET_KEY
+      value: "your secret key"
+    - key: AMAZON_ASSOCIATE_TAG
+      value: "your associate tag"
+    - key: PRODUCTION
+      value: "Set if running in production, keep blank if in development"
